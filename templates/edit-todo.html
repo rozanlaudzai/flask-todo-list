@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit a Todo{% endblock %}
+
+{% block header %}
+    <h1>Edit a Todo</h1>
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('edit_todo', tid=tid) }}" method="POST">
+        <div class="mb-3">
+            <label for="new-title" class="form-label">New Title</label>
+            <input
+                class="form-control"
+                type="text"
+                name="new-title"
+                id="new-title"
+                placeholder="New Title"
+                value="{{ old_title }}"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="new-description" class="form-label">New Description</label>
+            <textarea
+                class="form-control"
+                style="height: 200px;"
+                name="new-description"
+                id="new-description"
+                placeholder="New Description"
+            >{{ old_description }}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit</button>
+        <br>
+        <a href="{{ url_for('index') }}" class="btn btn-danger">Cancel</a>
+    </form>
+{% endblock %}
