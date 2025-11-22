@@ -11,8 +11,8 @@ app = Flask(
     static_folder='static',
     static_url_path='/'
 )
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todolist.db'
-app.secret_key = 'very secret cuy!'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todolist.sqlite3'
+app.secret_key = "WOOoW, it's a super secret key you've ever seen!"
 
 # === database-related ===
 db = SQLAlchemy(app)
@@ -229,4 +229,4 @@ def delete_todo(tid: str) -> Response:
 # === end of todos-related ===
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
