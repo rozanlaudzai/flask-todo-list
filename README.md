@@ -1,11 +1,11 @@
 # Flask To-Do List App
 
-A simple and extensible To-Do List web application built with **Flask**, featuring **user authentication**, **database migrations**, and **task management**.
+A simple To-Do List web application built with **Flask**, featuring **user authentication**, **database migrations**, and **task management**.
 This project is ideal for beginners learning Flask or anyone who wants a starter template for a CRUD-based web app.
 
 ---
 
-## 🚀 Table of Contents
+## Table of Contents
 
 * [About](#about)
 * [Tech Stack](#tech-stack)
@@ -55,8 +55,6 @@ Make sure Python and pip are installed.
 pip install -r requirements.txt
 ```
 
----
-
 ### 2. Set Up the Database
 
 Use Flask-Migrate to initialize and manage migrations:
@@ -66,8 +64,6 @@ flask db init       # Run once, creates migrations folder
 flask db migrate    # Generate migration scripts after model changes
 flask db upgrade    # Apply latest migrations
 ```
-
----
 
 ### 3. Run the Application
 
