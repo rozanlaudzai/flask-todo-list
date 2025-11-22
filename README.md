@@ -79,8 +79,7 @@ py app.py
 python3 app.py
 ```
 
-The app should now be accessible at:
-👉 [http://localhost:5000](http://localhost:5000)
+The app should now be accessible at: [http://localhost:5000](http://localhost:5000)
 
 ---
 
