@@ -3,8 +3,6 @@
 A simple To-Do List web application built with **Flask**, featuring **user authentication**, **database migrations**, and **task management**.
 This project is ideal for beginners learning Flask or anyone who wants a starter template for a CRUD-based web app.
 
----
-
 ## Table of Contents
 
 * [About](#about)
@@ -17,8 +15,6 @@ This project is ideal for beginners learning Flask or anyone who wants a starter
 * [Run with Docker](#run-with-docker)
 * [License](#license)
 
----
-
 ## About
 
 This is a lightweight Flask-based To-Do List application supporting:
@@ -30,8 +26,6 @@ This is a lightweight Flask-based To-Do List application supporting:
 
 It can be used as a simple productivity tool or as a base project to learn Flask fundamentals.
 
----
-
 ## Tech Stack
 
 * **Python 3**
@@ -40,8 +34,6 @@ It can be used as a simple productivity tool or as a base project to learn Flask
 * **Flask-Migrate**
 * **SQLAlchemy**
 * **HTML / Bootstrap**
-
----
 
 ## Getting Started
 
@@ -81,8 +73,6 @@ python3 app.py
 
 The app should now be accessible at: [http://localhost:5000](http://localhost:5000)
 
----
-
 ## Run with Docker
 
 ### Build the Docker image:
@@ -96,8 +86,6 @@ docker build -t flask-todo-app .
 ```bash
 docker run -d -p 5000:5000 flask-todo-app
 ```
-
----
 
 ## License
 
